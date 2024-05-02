@@ -2,17 +2,17 @@
 using namespace std;
 
 int main() {
-    int start, end, sum = 0, potochna;
+    int start, end, sum = 0, i;
     cout << "Введіть початок діапазону: ";
     cin >> start;
     cout << "Введіть кінець діапазону: ";
     cin >> end;
-    potochna = start;
-    while (potochna <= end) {
-        if (potochna % 2 != 0) {
-            sum += potochna;
+    i = start;
+    while (i <= end) {
+        if (i % 2 != 0) {
+            sum += i;
         }
-        potochna++;
+        i++;
     }
     cout<<"Сума непарних чисел у діапазоні від "<<start<<" до "<<end<<" дорівнює: "<<sum;
 
