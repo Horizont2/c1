@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     char symbol;
-    int length, count = 0;
+    int length, i = 0;
     bool verification;
     cout << "Введіть символ: ";
     cin >> symbol;
@@ -17,14 +17,14 @@ int main() {
     }
 
     if (verification) {
-        while (count < length) {
+        while (i < length) {
             cout << symbol;
-            count++;
+            i++;
         }
     } else {
-        while (count < length) {
-            cout << symbol << endl;
-            count++;
+        while (i < length) {
+            i << symbol << endl;
+            i++;
         }
     }
 
